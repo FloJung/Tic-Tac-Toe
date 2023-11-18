@@ -1,0 +1,56 @@
+/* Laden der Schriftart Open Sans von Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    color: white; /* Für bessere Lesbarkeit auf dunklem Hintergrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 70px; /* Passen Sie diese Größe an, falls erforderlich */
+    height: 70px; /* Passen Sie diese Größe an, falls erforderlich */
+    background-color: #323232; /* Hintergrundfarbe der Zellen */
+    text-align: center;
+    font-size: 24px;
+    vertical-align: middle;
+    
+}
+
+
+
+td:not(:nth-child(3n)) {
+    border-right: 2px solid white;
+}
+
+tr:not(:last-child) td {
+    border-bottom: 2px solid white;
+}
