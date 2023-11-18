@@ -45,7 +45,10 @@ td {
     
 }
 
-
+td:hover {
+    background-color: #272626;
+    cursor: pointer;
+}
 
 td:not(:nth-child(3n)) {
     border-right: 2px solid white;
@@ -53,4 +56,26 @@ td:not(:nth-child(3n)) {
 
 tr:not(:last-child) td {
     border-bottom: 2px solid white;
+}
+
+.win-line {
+    position: absolute;
+    
+}
+
+#myButton {
+    padding: 10px 20px;
+    margin-top: 50px;
+    background-color: #4CAF50; /* Grüne Hintergrundfarbe */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#myButton:hover {
+    background-color: #45a049; /* Dunklerer Grünton beim Hover */
+    transform: scale(1.05); /* Leichtes Anwachsen beim Hover */
 }
